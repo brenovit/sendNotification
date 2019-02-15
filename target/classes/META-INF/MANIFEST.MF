@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: breno
+Build-Jdk: 10.0.2
+Implementation-Title: sendEmail
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: br.com.friends
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/sendEmail
+Created-By: Maven Integration for Eclipse
+
