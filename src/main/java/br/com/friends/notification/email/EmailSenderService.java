@@ -1,4 +1,4 @@
-package br.com.friends.sendEmail;
+package br.com.friends.notification.email;
 
 import java.util.Date;
 import java.util.Properties;
@@ -14,6 +14,7 @@ import javax.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.friends.notification.general.EmailRequest;
 import lombok.extern.log4j.Log4j2;
 
 @Service

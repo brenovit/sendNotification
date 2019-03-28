@@ -1,4 +1,4 @@
-package br.com.friends.sendEmail;
+package br.com.friends.notification.general;
 
 import javax.mail.MessagingException;
 
@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import br.com.friends.notification.email.EmailSenderService;
 
 @RestController
 @RequestMapping("/api")

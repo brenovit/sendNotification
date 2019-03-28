@@ -1,4 +1,4 @@
-package br.com.friends.sendEmail;
+package br.com.friends.notification.general;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
