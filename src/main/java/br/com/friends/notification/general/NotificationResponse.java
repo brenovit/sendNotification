@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmailResponse {
-	String mensagem;
+public class NotificationResponse {
+	private String code;
+	private String message;
 }

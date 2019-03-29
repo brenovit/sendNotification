@@ -14,7 +14,7 @@ import javax.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.friends.notification.general.EmailRequest;
+import br.com.friends.notification.general.NotificationRequest;
 import lombok.extern.log4j.Log4j2;
 
 @Service
@@ -53,7 +53,8 @@ public class EmailSenderService {
 		log.info("Email sended");
 	}
 
-	public void sendMail(EmailRequest request) throws MessagingException {
-		sendMail(request.getSubject(), request.getMessage(), request.getTo());		
+	public void sendMail(NotificationRequest request) {
+		log.info("Enviando email para: {}", request.toString());
+		//sendMail(request.getSubject(), request.getMessage(), request.getEmail());		
 	}
 }

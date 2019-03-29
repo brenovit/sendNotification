@@ -10,19 +10,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.friends.notification.email.EmailSenderService;
-
 @RestController
 @RequestMapping("/api")
-public class EmailController {
+public class NotificationController {
 	
 	@Autowired
-	private EmailSenderService emailSenderService;
-		
+	private NotificationService service;
+	
 	@PostMapping(path="/send")
-	public ResponseEntity<?> send(@RequestBody EmailRequest request) throws MessagingException{
-		emailSenderService.sendMail(request);
-		EmailResponse response = new EmailResponse("Email enviado com sucesso");
-		return new ResponseEntity<EmailResponse>(response, HttpStatus.OK);
+	public ResponseEntity<?> send(@RequestBody NotificationRequest request) throws MessagingException{
+		service.send(request);
+		NotificationResponse response = new NotificationResponse("00","Notificação enviada com sucesso");
+		return new ResponseEntity<NotificationResponse>(response, HttpStatus.OK);
 	}
 }

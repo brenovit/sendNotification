@@ -8,6 +8,7 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 
+import br.com.friends.notification.general.NotificationRequest;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
@@ -18,7 +19,7 @@ public class SMSSenderService {
 	private SMSProperties properties;
 	
 	public void send(String number, String smsMessage) {
-		try {
+		try {			
 			// Construct data
 			String apiKey = "apikey=" + properties.getApikey();
 			String message = "&message=" + smsMessage;
@@ -41,5 +42,10 @@ public class SMSSenderService {
 		} catch (Exception e) {
 			log.error(e.getMessage(), e);
 		}
+	}
+
+	public void send(NotificationRequest request) {
+		//send(request.getNumber(), request.getMessage());
+		log.info("Enviando sms para: {}", request.toString());
 	}
 }
