@@ -1,6 +1,6 @@
 package br.com.friends.notification.general.command;
 
-import br.com.friends.notification.general.NotificationRequest;
+import br.com.friends.notification.general.dto.NotificationRequest;
 import lombok.SneakyThrows;
 
 public class SendPushCommand implements Command {

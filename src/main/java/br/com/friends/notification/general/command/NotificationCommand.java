@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import br.com.friends.notification.email.EmailSenderService;
-import br.com.friends.notification.general.NotificationRequest;
+import br.com.friends.notification.general.dto.NotificationRequest;
 import br.com.friends.notification.push.PushService;
 import br.com.friends.notification.sms.SMSSenderService;
 import lombok.SneakyThrows;

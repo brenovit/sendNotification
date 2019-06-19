@@ -1,4 +1,4 @@
-package br.com.friends.notification.general;
+package br.com.friends.notification.general.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

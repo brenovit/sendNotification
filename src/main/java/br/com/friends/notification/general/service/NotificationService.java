@@ -1,4 +1,4 @@
-package br.com.friends.notification.general;
+package br.com.friends.notification.general.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,6 +8,7 @@ import br.com.friends.notification.general.command.NotificationSenderExecutor;
 import br.com.friends.notification.general.command.SendEmailCommand;
 import br.com.friends.notification.general.command.SendPushCommand;
 import br.com.friends.notification.general.command.SendSMSCommand;
+import br.com.friends.notification.general.dto.NotificationRequest;
 
 @Service
 public class NotificationService {
